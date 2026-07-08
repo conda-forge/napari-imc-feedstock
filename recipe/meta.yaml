@@ -1,13 +1,13 @@
 {% set name = "napari-imc" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-imc-{{ version }}.tar.gz
-  sha256: 705015bc70414ff63588bdc4a19c9fae9f203696830987edc27265a573fb00bd
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 6c77e90f31a573e4139df11ac80dcbd22f028298b05d818f35b77cf6feed6b7d
 
 build:
   noarch: python
